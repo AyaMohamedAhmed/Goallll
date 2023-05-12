@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TeamsCollectionViewCell" id="gTV-IL-0wX" customClass="TeamsCollectionViewCell" customModule="Goallll" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="251" height="137"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="251" height="137"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JES-Pb-SjJ" customClass="CardView" customModule="Goallll" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="251" height="137"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Is-x9-nU2">
+                                <rect key="frame" x="60" y="10" width="71" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="cDB-DT-3Js"/>
+                                    <constraint firstAttribute="width" constant="71" id="tLm-2e-Whj"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zUc-hA-7da">
+                                <rect key="frame" x="20" y="91" width="150" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="kpb-Q5-AGt"/>
+                                    <constraint firstAttribute="width" constant="150" id="rdS-s8-uuI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="CardColor"/>
+                        <constraints>
+                            <constraint firstItem="zUc-hA-7da" firstAttribute="top" secondItem="0Is-x9-nU2" secondAttribute="bottom" constant="10" id="CUv-PW-aEQ"/>
+                            <constraint firstItem="0Is-x9-nU2" firstAttribute="leading" secondItem="JES-Pb-SjJ" secondAttribute="leading" constant="60" id="ELz-Ls-Ylf"/>
+                            <constraint firstItem="zUc-hA-7da" firstAttribute="leading" secondItem="JES-Pb-SjJ" secondAttribute="leading" constant="20" id="fd8-Kp-I5C"/>
+                            <constraint firstItem="0Is-x9-nU2" firstAttribute="top" secondItem="JES-Pb-SjJ" secondAttribute="top" constant="10" id="jXE-jo-hhJ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="JES-Pb-SjJ" secondAttribute="trailing" id="GB1-4d-Oia"/>
+                <constraint firstItem="JES-Pb-SjJ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="JWB-iw-za4"/>
+                <constraint firstItem="JES-Pb-SjJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Snu-JD-dH3"/>
+                <constraint firstAttribute="bottom" secondItem="JES-Pb-SjJ" secondAttribute="bottom" id="h0z-ze-a7c"/>
+            </constraints>
+            <size key="customSize" width="251" height="137"/>
+            <connections>
+                <outlet property="TeamsImg" destination="0Is-x9-nU2" id="Ca3-KV-a9d"/>
+                <outlet property="teamsName" destination="zUc-hA-7da" id="ycA-Zr-eOe"/>
+            </connections>
+            <point key="canvasLocation" x="203.81679389312976" y="51.056338028169016"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="CardColor">
+            <color red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
