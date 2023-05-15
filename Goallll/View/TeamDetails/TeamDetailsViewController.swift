@@ -88,6 +88,7 @@ class TeamDetailsViewController: UIViewController {
                         }
                         
                     }
+        
                     else{
                         self.teamName.isHidden = true
                         self.Player_lbl.isHidden = true
